@@ -23,6 +23,13 @@ div#navigation
 	text-align:right;	
 }
 
+div#footer_navigation a
+{
+	color:#fff;
+	text-decoration:none;
+	padding:5px;
+}
+
 div.journal_entry, div.page_body
 {
 	background:#e8e8e8;

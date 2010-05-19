@@ -76,6 +76,17 @@ class ORM extends ORM_Core
 	
 	
 	/**
+	  * New object path
+	  * @Developer brandon
+	  * @Date May 19, 2010
+	  */
+	public function new_path()
+	{
+		return url::site(Kohana::config('routes.base_crud_route') . inflector::plural($this->object_name) . '/new');
+	}
+	
+	
+	/**
 	  * Edit path route
 	  * @developer Brandon Hansen
 	  * @date May 16, 2010

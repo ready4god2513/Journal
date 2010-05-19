@@ -138,7 +138,7 @@ abstract class Crud_Controller extends Template_Controller
 				}
 				else
 				{
-					url::redirect($this->directory . '/new_one');
+					url::redirect($this->directory . '/new');
 				}
 			}
 		}
