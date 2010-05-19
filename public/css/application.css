@@ -40,3 +40,18 @@ div.journal_entry_content
 	font-style:italic;
 	margin:5px 10px;
 }
+
+.right
+{
+	float:right;
+}
+
+.left
+{
+	float:left;
+}
+
+.clear
+{
+	clear:both;
+}

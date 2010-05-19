@@ -6,6 +6,9 @@
 <meta name="description" content="<?=meta::get_description()?>" />
 <meta name="keywords" content="<?=meta::get_keywords()?>" />
 <?=html::static_css('public/css/application')?>
+<?=html::static_js('http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js')?>
+<?=html::static_js('public/js/libraries.jquery')?>
+<?=html::static_js('public/js/application')?>
 </head>
 <body id="<?=Router::$controller?>" class="<?=Router::$method?>">
 <div class="container">

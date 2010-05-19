@@ -1,16 +1,19 @@
 $(function(){
 	
-	$('.ajax_enabled_form').submit(function(){
-		var form = $(this);
-		
-		$.ajax({
-			url: form.attr('action'),
-			type: 'POST',
-			dataType: 'script',
-			data: form.serialize()
-		});
-		
-		return false;
+	$('textarea').autoResize({
+	    // On resize:
+	    onResize : function() {
+	        $(this).css({opacity:0.8});
+	    },
+	    // After resize:
+	    animateCallback : function() {
+	        $(this).css({opacity:1});
+	    },
+	    // Quite slow animation:
+	    animateDuration : 300,
+	
+	    // More extra space:
+	    extraSpace : 100
 	});
 	
 });
