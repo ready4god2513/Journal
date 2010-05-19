@@ -35,7 +35,7 @@ div.formFields textarea
 }
 
 
-#username, #password
+#username, #password, #email
 {
 	width:300px;
 }

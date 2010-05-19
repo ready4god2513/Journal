@@ -11,4 +11,15 @@
 <?=html::static_js('public/js/application')?>
 </head>
 <body id="<?=Router::$controller?>" class="<?=Router::$method?>">
+
 <div class="container">
+	<?php if(user::logged_in()): ?>
+		<?=html::anchor('new', 'New Entry')?>
+		<?=html::anchor('', 'All Entries')?>
+		<?=html::anchor('logout', 'Logout')?>
+	<?php else: ?>
+		<?=html::anchor('login', 'Login')?>
+		<?=html::anchor('users', 'Register')?>
+	<?php endif; ?>
+</div>
+<div class="container white">

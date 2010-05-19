@@ -15,6 +15,7 @@ $config['_default'] = 'journals';
 $config['(.*)/new'] = '$1/new_one';
 $config['new'] = 'journals/new_one';
 $config['edit/([0-9]+)'] = 'journals/edit/$1';
+$config['users'] = 'users/new_one';
 
 /**
   * Missing Pages and Error Handling
