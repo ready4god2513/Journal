@@ -10,7 +10,13 @@
 		</div>
 	</fieldset>
 	<div class="right">
-		<?=form::submit('submit', 'Save Journal')?>
+		<?=form::submit('submit', 'Save Entry')?>
 	</div>
-	<div class="clear"></div>
 <?=form::close()?>
+<div class="left">
+	<?=form::open('journals/delete', array('class' => 'deleteObjectLink'))?>
+		<?=form::hidden('id', $journal->id)?>
+		<?=form::submit('submit', 'Delete Entry')?>
+	<?=form::close()?>
+</div>
+<div class="clear"></div>

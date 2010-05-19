@@ -16,4 +16,10 @@ $(function(){
 	    extraSpace : 100
 	});
 	
+	$('form.deleteObjectLink').submit(function(){
+		if(!confirm('Once you delete this, it is gone forever.  Continue?')){
+			return false;
+		}
+	});
+	
 });

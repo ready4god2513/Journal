@@ -74,6 +74,27 @@ div.journal_entry_content, div.page_content
 	margin:5px 10px;
 }
 
+table
+{
+	border:1px solid #ccc;
+	border-collapse: collapse;
+}
+
+table th, table td
+{
+	border:1px solid #ccc;	
+}
+
+table tr:nth-child(odd) th, table tr:nth-child(odd) td
+{
+	background:#e8e8e8;
+}
+
+table tr:nth-child(even) th, table tr:nth-child(even) td
+{
+	background:#f8f8f8;
+}
+
 .right
 {
 	float:right;

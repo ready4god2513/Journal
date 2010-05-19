@@ -10,7 +10,7 @@
 		</div>
 	</fieldset>
 	<div class="right">
-		<?=form::submit('submit', 'Save Journal')?>
+		<?=form::submit('submit', 'Save Entry')?>
 	</div>
 	<div class="clear"></div>
 <?=form::close()?>

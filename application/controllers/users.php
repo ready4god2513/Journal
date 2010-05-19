@@ -25,6 +25,7 @@ class Users_Controller extends Application_Controller
 	  */
 	public function show()
 	{
+		user::require_login();
 		parent::show(user::current()->id);
 		meta::set_title('My Profile');
 	}
@@ -37,6 +38,7 @@ class Users_Controller extends Application_Controller
 	  */
 	public function edit()
 	{
+		user::require_login();
 		parent::edit(user::current()->id);
 		meta::set_title('Update Account');
 	}
@@ -49,6 +51,7 @@ class Users_Controller extends Application_Controller
 	  */
 	public function update()
 	{
+		user::require_login();
 		parent::update(user::current()->id);
 	}
 	
@@ -60,14 +63,11 @@ class Users_Controller extends Application_Controller
 	  */
 	public function delete()
 	{
-		$user = ORM::factory($this->model_name, $this->input->post('id'));
+		user::require_login();
+		user::current()->delete();
+		Auth::instance()->logout();
 		
-		if($user->id != user::current()->id)
-		{
-			url::redirect('');
-		}
-		
-		parent::delete();
+		url::redirect('login');
 	}
 	
 }

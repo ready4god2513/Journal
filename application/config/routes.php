@@ -16,7 +16,7 @@ $config['(.*)/new'] = '$1/new_one';
 $config['([0-9]+)/(.*)'] = 'journals/show/$1';
 $config['new'] = 'journals/new_one';
 $config['edit/([0-9]+)'] = 'journals/edit/$1';
-$config['users'] = 'users/new_one';
+$config['register'] = 'users/new_one';
 
 
 /**
