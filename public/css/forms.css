@@ -1,0 +1,35 @@
+div.formFields
+{
+	margin:5px 0;
+}
+
+fieldset
+{
+	border:1px solid #e8e8e8;
+}
+
+legend
+{
+	font-size:1.4em;	
+}
+
+
+div.formFields label
+{
+	display:block;
+	font-size:1.2em;
+}
+
+div.formFields input[type=text]
+{
+	padding:5px;
+	font-size:1.3em;
+	width:97%;
+}
+
+div.formFields textarea
+{
+	width:97%;
+	font-size:1.4em;
+	font-style:italic;
+}

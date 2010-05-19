@@ -1,0 +1,8 @@
+#!/bin/sh
+
+createModel()
+{
+	php php/model.php $1
+}
+
+createModel $1

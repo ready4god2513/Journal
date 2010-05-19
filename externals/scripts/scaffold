@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# THE PROBLEM HERE IS THAT WITHOUT HARD-CODING THE PATH
+# IT MAY HAVE SOME ISSUES.
+BASEPATH=$PWD
+
+
+./model $1
+./view $2
+./controller $2

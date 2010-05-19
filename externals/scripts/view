@@ -1,0 +1,8 @@
+#!/bin/sh
+
+createViews()
+{
+	php php/view.php $1
+}
+
+createViews $1

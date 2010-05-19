@@ -1,0 +1,8 @@
+#!/bin/sh
+
+createController()
+{
+	php php/controller.php $1
+}
+
+createController $1

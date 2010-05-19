@@ -1,0 +1,42 @@
+@import url("blueprint.css");
+@import url("forms.css");
+
+body
+{
+	background:#369;
+	margin:50px auto;	
+}
+
+div.container
+{
+	background:#fff;
+	padding:15px 15px 0 15px;
+}
+
+div.journal_entry
+{
+	background:#e8e8e8;
+	margin-bottom:15px;
+	padding:10px;
+}
+
+div.journal_meta
+{
+	color:#666;
+	font-size:2em;
+	font-weight:bold;
+}
+
+div.journal_meta span.the_time
+{
+	font-size:0.5em;
+	color:#777;
+	margin-left:10px;
+	display:block;
+}
+
+div.journal_entry_content
+{
+	font-style:italic;
+	margin:5px 10px;
+}
