@@ -3,6 +3,7 @@
 class User_Model extends Auth_User_Model
 {
 	
+	public $has_many = array('journals');
 	protected $validates_presence_of = array('email', 'username', 'password');
 	protected $validates_uniqueness_of = array('email', 'username');
 	public $formo_ignores = array('logins', 'last_login');

@@ -20,7 +20,7 @@ div.formFields label
 	font-size:1.2em;
 }
 
-div.formFields input[type=text]
+div.formFields input[type=text], div.formFields input[type=password]
 {
 	padding:5px;
 	font-size:1.3em;
@@ -32,4 +32,10 @@ div.formFields textarea
 	width:97%;
 	font-size:1.4em;
 	font-style:italic;
+}
+
+
+#username, #password
+{
+	width:300px;
 }

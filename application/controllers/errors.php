@@ -12,7 +12,7 @@ class Errors_Controller extends Application_Controller
 	 */
 	public function error_404()
 	{
-		header("HTTP/1.0 404 Not Found");
+		header('HTTP/1.0 404 Not Found');
 		meta::set_title('This Page will be Forever Missed');
 		$this->template
 			->set('title', 'Missing Page')

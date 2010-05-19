@@ -3,6 +3,7 @@
 class Journal_Model extends ORM
 {
 	
+	protected $belongs_to = array('user');
 	protected $validates_presence_of = array('user_id', 'content');
 	protected $sorting = array('id' => 'DESC');
 	public $formo_ignores = array('user_id');
@@ -45,5 +46,17 @@ class Journal_Model extends ORM
 		
 		return $value;
 	}
+	
+	
+	/**
+	  * Link to the journal
+	  * @Developer brandon
+	  * @Date May 18, 2010
+	  */
+	public function show_path()
+	{
+		return url::site('journals/show/' . $this->id . '/' . $this->title);
+	}
+
 
 }
