@@ -13,9 +13,18 @@ $config['_default'] = 'journals';
   * @Date May 17, 2010
   */
 $config['(.*)/new'] = '$1/new_one';
+$config['([0-9]+)/(.*)'] = 'journals/show/$1';
 $config['new'] = 'journals/new_one';
 $config['edit/([0-9]+)'] = 'journals/edit/$1';
 $config['users'] = 'users/new_one';
+
+
+/**
+  * Static pages
+  * @Developer brandon
+  * @Date May 19, 2010
+  */
+$config['page/(.*)'] = 'statics/show/$1';
 
 /**
   * Missing Pages and Error Handling

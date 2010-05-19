@@ -12,7 +12,7 @@
 </head>
 <body id="<?=Router::$controller?>" class="<?=Router::$method?>">
 
-<div class="container">
+<div class="container" id="navigation">
 	<?php if(user::logged_in()): ?>
 		<?=html::anchor('new', 'New Entry')?>
 		<?=html::anchor('', 'All Entries')?>

@@ -120,6 +120,17 @@ class ORM extends ORM_Core
 	
 	
 	/**
+	  * Show the object.  This makes the assumption that the primary value is "title"
+	  * @Developer brandon
+	  * @Date May 18, 2010
+	  */
+	public function show_path()
+	{
+		return url::site(Kohana::config('routes.base_crud_route') . inflector::plural($this->object_name) . '/show/' . $this->id . '/' . $this->title);
+	}
+	
+	
+	/**
 	  * Find only the max per page by default
 	  * @Developer brandon
 	  * @Date Apr 20, 2010

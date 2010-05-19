@@ -2,6 +2,18 @@
 
 class Sessions_Controller extends Application_Controller
 {
+	
+	
+	/**
+	  * Show the login page
+	  * @Developer brandon
+	  * @Date May 19, 2010
+	  */
+	public function new_one()
+	{
+		parent::new_one();
+		meta::set_title('Login');
+	}
 
 	
 	/**

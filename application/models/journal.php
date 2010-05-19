@@ -49,14 +49,14 @@ class Journal_Model extends ORM
 	
 	
 	/**
-	  * Link to the journal
+	  * Show path for journals
 	  * @Developer brandon
-	  * @Date May 18, 2010
+	  * @Date May 19, 2010
 	  */
 	public function show_path()
 	{
-		return url::site('journals/show/' . $this->id . '/' . $this->title);
+		return url::site($this->id . '/' . $this->title);
 	}
-
-
+	
+	
 }

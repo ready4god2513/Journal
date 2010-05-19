@@ -7,6 +7,7 @@ fieldset
 {
 	border:1px solid #e8e8e8;
 	margin:10px 0;
+	background:#f8f8f8;
 }
 
 legend
@@ -26,6 +27,7 @@ div.formFields input[type=text], div.formFields input[type=password]
 	padding:5px;
 	font-size:1.3em;
 	width:97%;
+	-moz-border-radius:2px;
 }
 
 div.formFields textarea
@@ -41,14 +43,13 @@ div.formFields textarea
 	width:300px;
 }
 
-input[type=submit], input[type=button]
+input[type=submit], input[type=button], #navigation a
 {
 	color: white;
 	text-decoration: none;
 	font-size: 1.4em;
 	font-family: helvetica, arial;
 	font-weight: bold;
-	display: block;
 	text-align: center;
 	position: relative;
 	margin:5px 0 10px 0;
@@ -64,7 +65,7 @@ input[type=submit], input[type=button]
 	text-shadow: 1px 1px 1px black;
 }
 
-input[type=submit]:hover, input[type=button]:hover 
+input[type=submit]:hover, input[type=button]:hover, #navigation a
 {
 	background: #014464;
  	background: -moz-linear-gradient(top, #0c5f85, #0b5273 50%, #024869 51%, #003853);

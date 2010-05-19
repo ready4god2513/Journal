@@ -22,11 +22,25 @@ class Journals_Controller extends Application_Controller
 	 */
 	public function index()
 	{
+		meta::set_title('My Journals');
+		
 		$this->template
 			->set('title', 'Journals')
 			->set('content', View::factory('journals/index')
 				->set('journals', user::current()->journals)
 				);
+	}
+	
+	
+	/**
+	  * Create a new entry
+	  * @Developer brandon
+	  * @Date May 19, 2010
+	  */
+	public function new_one()
+	{
+		parent::new_one();
+		meta::set_title('New Journal Entry');
 	}
 	
 	
@@ -45,6 +59,7 @@ class Journals_Controller extends Application_Controller
 			url::redirect('');
 		}
 		
+		meta::set_title(date::user_friendly_date($journal->created_at) . ' : ' . $journal->title);
 		parent::show($id);
 	}
 	
@@ -58,6 +73,26 @@ class Journals_Controller extends Application_Controller
 	{
 		$_POST['user_id'] = (string) user::current();
 		parent::create();
+	}
+	
+	
+	/**
+	  * Make sure that the one to update belongs to the user
+	  * @Developer brandon
+	  * @Date May 19, 2010
+	  */
+	public function edit($id = NULL)
+	{
+		$journal = ORM::factory('journal', $id);
+		
+		if($journal->user->id != user::current()->id)
+		{
+			url::redirect('');
+		}
+		
+		meta::set_title(date::user_friendly_date($journal->created_at) . ' : ' . $journal->title);
+		
+		parent::edit($id);
 	}
 	
 	
