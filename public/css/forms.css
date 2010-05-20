@@ -32,7 +32,8 @@ div.formFields input[type=text], div.formFields input[type=password]
 
 div.formFields textarea
 {
-	width:97%;
+	width:98%;
+	height:300px;
 	font-size:1.4em;
 	font-style:italic;
 }
