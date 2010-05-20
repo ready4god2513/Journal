@@ -11,6 +11,11 @@ class Sessions_Controller extends Application_Controller
 	  */
 	public function new_one()
 	{
+		if(user::logged_in())
+		{
+			url::redirect('');
+		}
+		
 		parent::new_one();
 		meta::set_title('Login');
 	}
@@ -23,6 +28,11 @@ class Sessions_Controller extends Application_Controller
 	  */
 	public function create()
 	{
+		if(user::logged_in())
+		{
+			url::redirect('');
+		}
+		
 		if(ORM::factory('user')->login($this->input->post()))
 		{
 			url::redirect(Session::instance()->get('redirect', ''));

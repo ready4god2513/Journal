@@ -11,6 +11,14 @@
 <?=html::static_js('public/js/application')?>
 </head>
 <body id="<?=Router::$controller?>" class="<?=Router::$method?>">
+	
+<?php if(flash::get_message()): ?>
+	<div id="flash_message"><?=flash::get_message()?></div>
+<?php endif; ?>
+
+<?php if(flash::get_error()): ?>
+	<div id="flash_error"><?=flash::get_error()?></div>
+<?php endif; ?>
 
 <div class="container" id="navigation">
 	<?php if(user::logged_in()): ?>
