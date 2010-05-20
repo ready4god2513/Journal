@@ -1,3 +1,4 @@
+	</div>
 </div>
 <div class="container" id="footer_navigation">
 	<?php foreach(statics::navigation() as $page): ?>

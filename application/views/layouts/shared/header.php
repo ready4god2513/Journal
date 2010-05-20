@@ -27,10 +27,11 @@
 	<?php endif; ?>
 </div>
 <div class="container white">
-	<?php if(flash::get_message()): ?>
-		<div class="user_message" id="flash_message"><?=flash::get_message()?></div>
-	<?php endif; ?>
-
-	<?php if(flash::get_error()): ?>
-		<div class="user_message" id="flash_error"><?=flash::get_error()?></div>
-	<?php endif; ?>
+	<div class="margining">
+		<?php if(flash::get_message()): ?>
+			<div class="user_message" id="flash_message"><?=flash::get_message()?></div>
+		<?php endif; ?>
+	
+		<?php if(flash::get_error()): ?>
+			<div class="user_message" id="flash_error"><?=flash::get_error()?></div>
+		<?php endif; ?>

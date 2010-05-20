@@ -8,9 +8,15 @@ body
 	margin:50px auto;	
 }
 
-div.container div, div.container fieldset
+div.container
 {
-	margin:10px 15px 0 15px;
+	padding:0;
+	margin:0 auto;	
+}
+
+div.margining
+{
+	padding:12px;	
 }
 
 div.white
