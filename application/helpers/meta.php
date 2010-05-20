@@ -100,7 +100,7 @@ class meta_Core
 		}
 		else
 		{
-			return strip_tags(self::$meta['description']);
+			return strip_tags(self::$meta['keywords']);
 		}
 	}
 	
