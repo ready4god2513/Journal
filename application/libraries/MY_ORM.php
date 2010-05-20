@@ -124,7 +124,7 @@ class ORM extends ORM_Core
 	  * @Developer brandon
 	  * @Date May 17, 2010
 	  */
-	public function destroy_path()
+	public function delete_path()
 	{
 		return url::site(Kohana::config('routes.base_crud_route') . inflector::plural($this->object_name) . '/delete/');
 	}

@@ -1,5 +1,4 @@
 <?=form::open($user->create_path())?>
-	<?=form::redirect_after('new')?>
 	<fieldset>
 		<legend>Create an Account</legend>
 		<div class="formFields">

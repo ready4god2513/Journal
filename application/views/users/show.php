@@ -19,8 +19,13 @@
 	</table>
 	
 	<div class="left">
-		<?=form::open('users/delete', array('class' => 'deleteObjectLink'))?>
+		<?=form::open($user->delete_path(), array('class' => 'deleteObjectLink'))?>
 			<?=form::submit('submit', 'Delete My Account')?>
+		<?=form::close()?>
+	</div>
+	<div class="right">
+		<?=form::open($user->edit_path())?>
+			<?=form::submit('submit', 'Edit My Account')?>
 		<?=form::close()?>
 	</div>
 	<div class="clear"></div>

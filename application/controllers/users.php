@@ -52,6 +52,10 @@ class Users_Controller extends Application_Controller
 	public function update()
 	{
 		user::require_login();
+		if(!$this->input->post('password'))
+		{
+			unset($_POST['password']);
+		}
 		parent::update(user::current()->id);
 	}
 	
