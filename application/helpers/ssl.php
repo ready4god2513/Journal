@@ -39,13 +39,13 @@ class ssl_Core
 	 */
 	public static function https_port() 
 	{
-		if (Kohana::config('config.https') == 'https') 
+		if (Kohana::config('config.https') == 80) 
 		{
-			return "443";
+			return 80;
 		} 
 		else 
 		{
-			return "80";
+			return 443;
 		}
 	}
 	

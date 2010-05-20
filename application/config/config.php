@@ -115,6 +115,8 @@ $config['extension_prefix'] = 'MY_';
  */
 $config['static_file_path'] = '';
 
+$config['https'] = 80;
+
 /**
  * Additional resource paths, or "modules". Each path can either be absolute
  * or relative to the docroot. Modules can include any resource that can exist
