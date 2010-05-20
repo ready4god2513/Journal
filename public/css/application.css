@@ -3,7 +3,8 @@
 
 body
 {
-	background:#369;
+	background-color: rgb(197,204,211) !important;
+	background-image: url(../images/stripes.png);
 	margin:50px auto;	
 }
 
