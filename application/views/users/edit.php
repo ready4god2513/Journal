@@ -1,4 +1,5 @@
 <?=form::open($user->update_path())?>
+	<?=form::redirect_after($user->show_path())?>
 	<fieldset>
 		<legend>Update Account</legend>
 		<div class="formFields">

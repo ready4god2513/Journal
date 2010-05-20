@@ -329,13 +329,18 @@ class ORM extends ORM_Core
 	public function _validate_unique(Validation $array, $field)
 	{
 	   // check the database for existing records
-	   $field_exists = (bool) ORM::factory($this->object_name)->where($field, $array[$field])->count_all();
+		$requirements = array(
+			$this->primary_key . ' !=' => (string) $this,
+			$field => $array[$field]
+		);
+		
+		$field_exists = (bool) ORM::factory($this->object_name)->where($requirements)->count_all();
 	 
-	   if ($field_exists)
-	   {
-	       // add error to validation object
-	       $array->add_error($field, $field . '_exists');
-	   }
+		if ($field_exists)
+		{
+			// add error to validation object
+			$array->add_error($field, $field . '_exists');
+		}
 	}
 	
 }

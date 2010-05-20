@@ -74,6 +74,27 @@ div.journal_entry_content, div.page_content
 	margin:5px 10px;
 }
 
+div.user_message
+{
+	font-size:1.3em;
+	padding:15px;
+	margin:0 0 10px 0;
+	-moz-border-radius:5px;
+}
+
+div#flash_message
+{
+	background:#e8e8e8;
+	border:1px solid #fff;
+}
+
+div#flash_error
+{
+	background:#f8f8f8;
+	border:1px solid #e8e8e8;
+	color:#900;
+}
+
 table
 {
 	border:1px solid #ccc;
