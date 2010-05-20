@@ -1,0 +1,15 @@
+.container
+{
+	width:auto;	
+}
+
+body
+{
+	background-color: rgb(197,204,211) !important;
+	background-image: url(../images/stripes.png);
+	font-family: Helvetica;
+	margin: 0 0 0 10px;
+	padding: 0;
+	webkit-text-size-adjust: none;
+	webkit-user-select: none;
+}
