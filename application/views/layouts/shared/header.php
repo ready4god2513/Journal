@@ -11,8 +11,6 @@
 <?php endif; ?>
 <?=html::static_js(ssl::correct_http() . '://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js')?>
 <?=html::static_js('public/js/libraries.jquery')?>
-<?=html::static_js(ssl::correct_http() . '://use.typekit.com/svg7sdb.js')?>
-<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 <?=html::static_js('public/js/application')?>
 </head>
 <body id="<?=Router::$controller?>" class="<?=Router::$method?>">
