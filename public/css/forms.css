@@ -60,13 +60,11 @@ input[type=submit], input[type=button], #navigation a
 {
 	color: white;
 	text-decoration: none;
-	font-size: 1.4em;
-	font-family: helvetica, arial;
-	font-weight: bold;
+	font-size: 2.2em;
 	text-align: center;
 	position: relative;
 	margin:5px 0 10px 0;
-	padding:5px;
+	padding:5px 10px;
 	background: #014464;
 	background: -moz-linear-gradient(top, #0D658E, #0C577A 50%, #014D71 51%, #003E5C);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #0E658E), color-stop(.5, #0C577A), color-stop(.5, #014D71), to(#003E5C)); 
@@ -76,6 +74,7 @@ input[type=submit], input[type=button], #navigation a
 	border: 1px solid #368DBE;
 	border-top: 1px solid #c3d6df;
 	text-shadow: 1px 1px 1px black;
+	font-family: 'Reenie Beanie', arial, serif;
 }
 
 input[type=submit]:hover, input[type=button]:hover, #navigation a

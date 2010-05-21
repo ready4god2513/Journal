@@ -9,7 +9,16 @@
 <?php if(request::is_mobile()): ?>
 	<?=html::static_css('public/css/mobile')?>
 <?php endif; ?>
-<?=html::static_js(ssl::correct_http() . '://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js')?>
+<script src="<?=ssl::correct_http()?>://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="<?=ssl::correct_http()?>://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+<script type="text/javascript">
+	WebFont.load({
+		google: {
+			families: [ 'Reenie Beanie' ]
+		}
+	});
+</script>
+
 <?=html::static_js('public/js/libraries.jquery')?>
 <?=html::static_js('public/js/application')?>
 </head>
