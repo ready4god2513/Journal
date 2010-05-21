@@ -3,6 +3,8 @@
 class Statics_Controller extends Application_Controller
 {
 	
+	protected $excluded_actions = array('index');
+	
 	
 	/**
 	  * Show
