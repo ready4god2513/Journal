@@ -15,16 +15,22 @@
 </head>
 <body id="<?=Router::$controller?>" class="<?=Router::$method?>">
 
-<div class="container" id="navigation">
-	<?php if(user::logged_in()): ?>
-		<?=html::anchor('users/show', 'Account')?>
-		<?=html::anchor('new', 'New Entry')?>
-		<?=html::anchor('', 'All Entries')?>
-		<?=html::anchor('logout', 'Logout')?>
-	<?php else: ?>
-		<?=html::anchor('login', 'Login')?>
-		<?=html::anchor('register', 'Register')?>
-	<?php endif; ?>
+<div class="container">
+	<div class="left">
+		<?=html::static_image('public/images/logo.png')?>
+	</div>
+	<div class="right" id="navigation">
+		<?php if(user::logged_in()): ?>
+			<?=html::anchor('users/show', 'Account')?>
+			<?=html::anchor('new', 'New Entry')?>
+			<?=html::anchor('', 'All Entries')?>
+			<?=html::anchor('logout', 'Logout')?>
+		<?php else: ?>
+			<?=html::anchor('login', 'Login')?>
+			<?=html::anchor('register', 'Register')?>
+		<?php endif; ?>
+	</div>
+	<div class="clear"></div>
 </div>
 
 <div class="container white">
