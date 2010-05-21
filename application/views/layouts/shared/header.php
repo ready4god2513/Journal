@@ -17,9 +17,9 @@
 
 <div class="container" id="navigation">
 	<?php if(user::logged_in()): ?>
-		<?=html::anchor('users/show', 'My Account')?>
-		<?=html::anchor('new', 'New Entry')?>
-		<?=html::anchor('', 'All Entries')?>
+		<?=html::anchor('users/show', 'Account')?>
+		<?=html::anchor('new', 'New')?>
+		<?=html::anchor('', 'Entries')?>
 		<?=html::anchor('logout', 'Logout')?>
 	<?php else: ?>
 		<?=html::anchor('login', 'Login')?>
