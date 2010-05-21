@@ -19,6 +19,7 @@ $config['edit/([0-9]+)'] = 'journals/edit/$1';
 $config['register'] = 'users/new_one';
 $config['users'] = 'users/show';
 $config['contact'] = 'statics/contact';
+$config['account'] = 'users/show';
 
 
 /**

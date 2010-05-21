@@ -15,6 +15,17 @@ h1#logo
 	text-shadow:2px 2px 2px #fff;
 }
 
+a:focus
+{
+	outline:none;
+}
+
+h1#logo a
+{
+	color:#000;
+	text-decoration:none;
+}
+
 span#tagline
 {
 	font-size:0.4em;

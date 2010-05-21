@@ -26,13 +26,13 @@
 
 <div class="container">
 	<h1 class="left" id="logo">
-		To Journal <span id="tagline">Remembering Life</span>
+		<?=html::anchor('journals', 'To Journal <span id="tagline">Remembering Life</span>')?>
 	</h1>
 	<div id="navigation">
 		<?php if(user::logged_in()): ?>
-			<?=html::anchor('users/show', 'Account')?>
+			<?=html::anchor('account', 'Account')?>
 			<?=html::anchor('new', 'New Entry')?>
-			<?=html::anchor('', 'All Entries')?>
+			<?=html::anchor('journals', 'All Entries')?>
 			<?=html::anchor('logout', 'Logout')?>
 		<?php else: ?>
 			<?=html::anchor('login', 'Login')?>
