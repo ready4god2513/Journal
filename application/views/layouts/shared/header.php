@@ -19,7 +19,7 @@
 	<div class="left" id="logo">
 		<?=html::static_image('public/images/logo.png')?>
 	</div>
-	<div class="right" id="navigation">
+	<div id="navigation">
 		<?php if(user::logged_in()): ?>
 			<?=html::anchor('users/show', 'Account')?>
 			<?=html::anchor('new', 'New Entry')?>
