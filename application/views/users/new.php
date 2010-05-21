@@ -1,4 +1,4 @@
-<?=form::open($user->create_path())?>
+<?=form::open($user->create_path(), array('id' => 'signupForm'))?>
 	<fieldset>
 		<legend>Create an Account</legend>
 		<div class="formFields">

@@ -1,4 +1,4 @@
-<?=form::open($journal->create_path())?>
+<?=form::open($journal->create_path(), array('id' => 'journalForm'))?>
 	<fieldset>
 		<legend>New Journal Entry</legend>
 		<div class="formFields">

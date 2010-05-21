@@ -1,4 +1,4 @@
-<?=form::open($journal->update_path())?>
+<?=form::open($journal->update_path(), array('id' => 'journalForm'))?>
 	<fieldset>
 		<legend>Update Journal Entry</legend>
 		<div class="formFields">

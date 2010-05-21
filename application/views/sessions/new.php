@@ -1,4 +1,4 @@
-<?=form::open('sessions/create')?>
+<?=form::open('sessions/create', array('id' => 'loginForm'))?>
 	<fieldset>
 		<legend>Login</legend>
 		<div class="formFields">

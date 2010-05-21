@@ -44,6 +44,18 @@ div.formFields textarea
 	width:300px;
 }
 
+input.error
+{
+	background:#fcc;
+}
+
+label.error
+{
+	color:#666;
+	font-weight:normal;
+	font-size:0.8em;
+}
+
 input[type=submit], input[type=button], #navigation a
 {
 	color: white;

@@ -26,8 +26,10 @@
 		<?=html::anchor('register', 'Register')?>
 	<?php endif; ?>
 </div>
+
 <div class="container white">
 	<div class="margining">
+		<div id="error_container"></div>
 		<?php if(flash::get_message()): ?>
 			<div class="user_message" id="flash_message"><?=flash::get_message()?></div>
 		<?php endif; ?>

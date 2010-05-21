@@ -1,4 +1,4 @@
-<?=form::open($user->update_path())?>
+<?=form::open($user->update_path(), array('id' => 'editUserForm'))?>
 	<?=form::redirect_after($user->show_path())?>
 	<fieldset>
 		<legend>Update Account</legend>
