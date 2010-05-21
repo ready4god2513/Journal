@@ -57,3 +57,14 @@ div.formFields textarea
 {
 	width:100%;
 }
+
+
+input[type=submit], input[type=button], #navigation a
+{
+	display:block;
+}
+
+input[type=submit]:hover, input[type=button]:hover, #navigation a
+{
+
+}
