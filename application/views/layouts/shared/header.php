@@ -19,7 +19,7 @@
 
 <div class="container">
 	<h1 class="left" id="logo">
-		To Journal
+		To Journal <span id="tagline">Remembering Life</span>
 	</h1>
 	<div id="navigation">
 		<?php if(user::logged_in()): ?>

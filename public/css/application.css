@@ -10,8 +10,16 @@ body
 
 h1#logo
 {
-	font-size:4em;
+	font-size:5em;
 	text-shadow:2px 2px 2px #fff;
+}
+
+span#tagline
+{
+	font-size:0.4em;
+	display:block;
+	color:#369;
+	margin:-5px 0 0 80px;
 }
 
 div.container
