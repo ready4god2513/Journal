@@ -16,7 +16,7 @@
 <body id="<?=Router::$controller?>" class="<?=Router::$method?>">
 
 <div class="container">
-	<div class="left">
+	<div class="left" id="logo">
 		<?=html::static_image('public/images/logo.png')?>
 	</div>
 	<div class="right" id="navigation">

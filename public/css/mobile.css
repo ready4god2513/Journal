@@ -13,6 +13,11 @@ body
 	font-size:2em;
 }
 
+div#logo
+{
+	display:none;
+}
+
 div.formFields
 {
 	margin:5px 0;
