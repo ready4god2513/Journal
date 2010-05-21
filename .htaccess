@@ -4,6 +4,9 @@ RewriteEngine On
 # Installation directory
 RewriteBase /
 
+RewriteCond %{HTTP_HOST} ^www\.tojournal\.com$ [NC]
+RewriteRule ^(.*)$ https://tojournal.com/$1 [R=301,L]
+
 # Protect application and system files from being viewed
 RewriteRule ^(application|modules|system) - [F,L]
 
