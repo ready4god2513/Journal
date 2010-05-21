@@ -42,7 +42,7 @@ $config['expiration'] = 86400;
  * Number of page loads before the session id is regenerated.
  * A value of 0 will disable automatic session id regeneration.
  */
-$config['regenerate'] = 0;
+$config['regenerate'] = 10;
 
 /**
  * Percentage probability that the gc (garbage collection) routine is started.

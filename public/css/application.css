@@ -56,6 +56,11 @@ div#navigation
 	text-align:right;	
 }
 
+div#footer_navigation
+{
+	padding:5px 0;
+}
+
 div#footer_navigation a
 {
 	color:#666;
