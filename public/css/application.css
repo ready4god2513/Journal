@@ -8,6 +8,12 @@ body
 	margin:20px auto;	
 }
 
+h1#logo
+{
+	font-size:4em;
+	text-shadow:2px 2px 2px #fff;
+}
+
 div.container
 {
 	padding:0;

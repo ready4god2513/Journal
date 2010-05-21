@@ -13,7 +13,7 @@ body
 	font-size:2em;
 }
 
-div#logo
+h1#logo
 {
 	display:none;
 }
