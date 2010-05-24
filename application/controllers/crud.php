@@ -131,15 +131,7 @@ abstract class Crud_Controller extends Template_Controller
 			else
 			{
 				flash::set_error('Missing input for required fields');
-				
-				if($this->input->post('redirect_override'))
-				{
-					url::redirect($this->input->post('redirect_override'));
-				}
-				else
-				{
-					url::redirect($this->directory . '/new');
-				}
+				url::redirect($this->directory . '/new');
 			}
 		}
 	}

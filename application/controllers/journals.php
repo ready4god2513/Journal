@@ -12,6 +12,9 @@ class Journals_Controller extends Application_Controller
 	{
 		parent::__construct();
 		user::require_login();
+		
+		// Add the topics to the footer
+		layout::add(View::factory('journals/topics'), 'footer');
 	}
 	
 	

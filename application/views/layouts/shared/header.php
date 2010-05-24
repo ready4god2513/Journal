@@ -9,7 +9,9 @@
 <?php if(request::is_mobile()): ?>
 	<?=html::static_css('public/css/mobile')?>
 <?php endif; ?>
-<script src="<?=ssl::correct_http()?>://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<?php 
+	/*
+	 *<script src="<?=ssl::correct_http()?>://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 <script type="text/javascript" src="<?=ssl::correct_http()?>://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
 <script type="text/javascript">
 	WebFont.load({
@@ -17,9 +19,13 @@
 			families: [ 'Reenie Beanie' ]
 		}
 	});
-</script>
+</script> 
+	 */
+?>
 
+<?=html::static_js('public/js/jquery')?>
 <?=html::static_js('public/js/libraries.jquery')?>
+<?=layout::output('header')?>
 <?=html::static_js('public/js/application')?>
 </head>
 <body id="<?=Router::$controller?>" class="<?=Router::$method?>">
@@ -30,14 +36,16 @@
 	</h1>
 	<div id="navigation">
 		<?php if(user::logged_in()): ?>
-			<?=html::anchor('account', 'Account')?>
-			<?=html::anchor('new', 'New Entry')?>
-			<?=html::anchor('journals', 'All Entries')?>
-			<?=html::anchor('logout', 'Logout')?>
+			<?=nav::add('account', 'Account')?>
+			<?=nav::add('new', 'New Entry')?>
+			<?=nav::add('journals', 'All Entries')?>
+			<?=nav::add('logout', 'Logout')?>
 		<?php else: ?>
-			<?=html::anchor('login', 'Login')?>
-			<?=html::anchor('register', 'Register')?>
+			<?=nav::add('login', 'Login')?>
+			<?=nav::add('register', 'Register')?>
 		<?php endif; ?>
+		
+		<?=nav::output()?>
 	</div>
 	<div class="clear"></div>
 </div>

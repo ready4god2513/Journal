@@ -6,5 +6,6 @@
 	<?php endforeach; ?>
 	<?=html::anchor('http://twitter.com/tojournal', 'Twitter')?>
 </div>
+<?=layout::output('footer')?>
 </body>
 </html>

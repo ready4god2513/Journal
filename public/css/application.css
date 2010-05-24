@@ -20,6 +20,11 @@ a:focus
 	outline:none;
 }
 
+a#generateRandomTopic
+{
+	cursor:pointer;	
+}
+
 h1#logo a
 {
 	color:#000;

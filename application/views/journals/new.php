@@ -3,7 +3,8 @@
 		<legend>New Journal Entry</legend>
 		<div class="formFields">
 			<?=form::label('title', 'Title')?>
-			<?=form::input('title', $journal->title)?>
+			<?=form::input('title', Input::instance()->get('title'))?>
+			<a id="generateRandomTopic">Suggest a Topic</a>
 		</div>
 		<div class="formFields">
 			<?=form::textarea('content', $journal->content)?>
