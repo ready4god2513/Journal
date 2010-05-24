@@ -6,5 +6,3 @@
 		<?=nl2br($static->content)?>
 	</div>
 </div>
-
-<?=View::factory('shared/analytics')?>

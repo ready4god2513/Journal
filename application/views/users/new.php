@@ -20,5 +20,3 @@
 	</div>
 	<div class="clear"></div>
 <?=form::close()?>
-
-<?=View::factory('shared/analytics')?>
