@@ -17,7 +17,7 @@
 			<td><?=$user->email?></td>
 		</tr>
 		<tr>
-			<th>Send Topic Hints</th>
+			<th>Send Daily Topics</th>
 			<td><?=format::to_s($user->send_reminders, 'Yes', 'No')?></td>
 		</tr>
 	</table>
