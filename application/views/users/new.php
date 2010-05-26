@@ -16,7 +16,7 @@
 			<?=form::password('password', $user->password)?>
 		</div>
 		<div class="formFields">
-			<?=form::checkbox('send_reminders', true, $user->send_reminders)?> Send Daily Journal Topics
+			<?=form::checkbox('send_reminders', true, $user->send_reminders)?> E-Mail Me Daily Journal Topics
 		</div>
 	</fieldset>
 	<div class="right">
