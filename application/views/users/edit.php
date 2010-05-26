@@ -14,6 +14,9 @@
 			<?=form::label('password', 'Password')?>
 			<?=form::password('password')?>
 		</div>
+		<div class="formFields">
+			<?=form::checkbox('send_reminders', $user->send_reminders, $user->send_reminders)?> Send me topic hints each day
+		</div>
 	</fieldset>
 	<div class="right">
 		<?=form::submit('submit', 'Update Account')?>

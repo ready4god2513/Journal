@@ -16,6 +16,10 @@
 			<th>Email</th>
 			<td><?=$user->email?></td>
 		</tr>
+		<tr>
+			<th>Send Topic Hints</th>
+			<td><?=format::to_s($user->send_reminders, 'Yes', 'No')?></td>
+		</tr>
 	</table>
 	
 	<div class="left">

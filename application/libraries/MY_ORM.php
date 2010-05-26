@@ -153,6 +153,17 @@ class ORM extends ORM_Core
 	
 	
 	/**
+	  * Find ALL objects
+	  * @developer Brandon Hansen
+	  * @date May 25, 2010
+	  */
+	public function find_all_no_limit()
+	{
+		return parent::find_all();
+	}
+	
+	
+	/**
 	  * Create a new instance of the object
 	  * @Developer brandon
 	  * @Date Apr 20, 2010

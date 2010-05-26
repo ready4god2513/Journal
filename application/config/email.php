@@ -20,3 +20,6 @@ $config['driver'] = 'native';
  * @param   array   smtp: hostname, (username), (password), (port), (auth), (encryption)
  */
 $config['options'] = NULL;
+$config['host'] = 'tojournal.com';
+$config['from_name'] = 'To Journal';
+$config['from'] = 'contact@tojournal.com';

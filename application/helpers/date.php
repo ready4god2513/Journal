@@ -3,6 +3,8 @@
 class date 
 {
 	
+	private static $current_time = false;
+	
 	/**
      * Find the number of days between two dates
      * @Developer Brandon Hansen
@@ -26,9 +28,54 @@ class date
 	 */
 	public static function current_day_abbr()
 	{
-		$julian_day = cal_to_jd(CAL_GREGORIAN, date('m'), date('d'), date('Y'));
+		$julian_day = cal_to_jd(CAL_GREGORIAN, date('m', self::get_current_time()), date('d', self::get_current_time()), date('Y', self::get_current_time()));
 		$day_of_week = (jddayofweek($julian_day, 1));
 		return substr($day_of_week, 0, 3);
+	}
+	
+	
+	/**
+	  * Get the current date
+	  * @Developer brandon
+	  * @Date May 19, 2010
+	  */
+	public static function current($format = 'Y-m-d', $date = NULL)
+	{
+		if(!$date)
+		{
+			return date($format, self::get_current_time());
+		}
+		else
+		{
+			return date($format, $date);
+		}
+	}
+	
+	
+	/**
+	  * Get the current time (as an integer)
+	  * @Developer brandon
+	  * @Date May 19, 2010
+	  */
+	public static function get_current_time()
+	{
+		if(self::$current_time === false)
+		{
+			self::set_current_time('NOW');
+		}
+		
+		return self::$current_time;
+	}
+	
+	
+	/**
+	  * Set the current time. This is very useful for unit tests, etc
+	  * @Developer brandon
+	  * @Date May 19, 2010
+	  */
+	public static function set_current_time($time)
+	{
+		self::$current_time = strtotime($time);
 	}
 	
 	
@@ -41,8 +88,7 @@ class date
 	 */
 	public static function get_javascript_friendly_date_string()
 	{
-		$now = strtotime( 'now' );
-		return date( 'F d, Y h:i:s' , $now );
+		return date('F d, Y h:i:s', self::get_current_time());
 	}
 	
 	
