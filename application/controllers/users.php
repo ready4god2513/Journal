@@ -28,9 +28,6 @@ class Users_Controller extends Application_Controller
 		user::require_login();
 		parent::show(user::current()->id);
 		meta::set_title('My Profile');
-		
-		$email = new Email();
-		$email->send_daily_email();
 	}
 	
 	
