@@ -1,5 +1,6 @@
 <?=form::open($user->update_path(), array('id' => 'editUserForm'))?>
 	<?=form::redirect_after($user->show_path())?>
+	<?=form::hidden('send_reminders', false)?>
 	<fieldset>
 		<legend>Update Account</legend>
 		<div class="formFields">
