@@ -1,8 +1,7 @@
 <?php
 
-class Topics_Controller extends Application_Controller
+class Blogs_Controller extends Application_Controller
 {
-	
 	
 	/**
 	  * Clear the cache on an constructive/destructive action
@@ -18,11 +17,22 @@ class Topics_Controller extends Application_Controller
 		{
 			if(!user::is_admin())
 			{
-				url::redirect('topics');
+				url::redirect('blog');
 			}
 			
 			Cache::instance()->delete_all();
 		}
+	}
+	
+	/**
+	  * Set the title for the blog posts
+	  * @Developer brandon
+	  * @Date May 27, 2010
+	  */
+	public function index()
+	{
+		parent::index();
+		meta::set_title('The Blog');
 	}
 
 }

@@ -1,0 +1,1 @@
+<?=View::factory('blogs/_entry')->set('blog', $blog)?>

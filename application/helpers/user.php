@@ -50,4 +50,15 @@ class user_Core
 		}
 	}
 	
+	
+	/**
+	  * Check to see if the user is an admin
+	  * @Developer brandon
+	  * @Date May 27, 2010
+	  */
+	public static function is_admin()
+	{
+		return user::logged_in() && user::current()->has(ORM::factory('role', 'admin'));
+	}
+	
 }

@@ -30,6 +30,14 @@ $config['account'] = 'users/show';
 $config['page/(.*)'] = 'statics/show/$1';
 
 /**
+  * Blogs
+  * @Developer brandon
+  * @Date May 27, 2010
+  */
+$config['blog'] = 'blogs';
+$config['blog/(.*)'] = 'blogs/$1';
+
+/**
   * Missing Pages and Error Handling
   * @Developer brandon
   * @Date May 17, 2010
