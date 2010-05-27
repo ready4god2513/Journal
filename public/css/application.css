@@ -8,11 +8,17 @@ body
 	margin:20px auto;	
 }
 
-h1#logo
+h1#logo, h1.fancy
 {
 	font-family: 'Reenie Beanie', arial, serif;
 	font-size:4.5em;
 	text-shadow:2px 2px 2px #fff;
+}
+
+h1.fancy
+{
+	background:#f8f8f8;
+	text-align:right;
 }
 
 a:focus
@@ -29,6 +35,13 @@ h1#logo a
 {
 	color:#000;
 	text-decoration:none;
+}
+
+h1.small
+{
+	font-size:3em;	
+	padding:5px;
+	margin:0;
 }
 
 span#tagline

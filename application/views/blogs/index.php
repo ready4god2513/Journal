@@ -1,6 +1,5 @@
-<h2>The Blog</h2>
-<h4>A Journey of Journaling</h4>
-
+<h1 class="fancy small">A Journey of Journaling</h1>
+<div class="clear"></div>
 <?php if(!count($blogs)): ?>
 	<h2>No Entries Here Yet.</h2>
 <?php endif; ?>
