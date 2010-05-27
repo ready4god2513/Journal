@@ -34,5 +34,18 @@ class Blogs_Controller extends Application_Controller
 		parent::index();
 		meta::set_title('The Blog');
 	}
+	
+	
+	/**
+	  * Set the title for the blog entry that the user is viewing
+	  * @Developer brandon
+	  * @Date May 27, 2010
+	  */
+	public function show($id = NULL)
+	{
+		parent::show($id);
+		$blog = ORM::factory('blog', $id);
+		meta::set_title($blog->title);
+	}
 
 }
