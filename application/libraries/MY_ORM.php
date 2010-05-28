@@ -36,6 +36,16 @@ class ORM extends ORM_Core
 	
 	
 	/**
+	  * Custom callbacks on validation.
+	  * Note: there must be a method called _validate_$field for every field that
+	  * is passed in.  The method should accept two parameters- (Validation $array, $field) and return void
+	  * @Developer brandon
+	  * @Date May 28, 2010
+	  */
+	protected $validates_custom = array();
+	
+	
+	/**
 	  * Set the default fields for formo to ignore
 	  * @developer Brandon Hansen
 	  * @date May 16, 2010
@@ -325,6 +335,13 @@ class ORM extends ORM_Core
 		foreach($this->validates_uniqueness_of as $field)
 		{
 			$validation->add_callbacks($field, array($this, '_validate_unique'));
+		}
+		
+		
+		// Validation callbacks
+		foreach($this->validates_custom as $field)
+		{
+			$validation->add_callbacks($field, array($this, '_validate_' . $field));
 		}
 		
 		return $validation->validate();
