@@ -13,5 +13,8 @@
 	<div class="right">
 		<?=form::submit('submit', 'Login')?>
 	</div>
-	<div class="clear"></div>
 <?=form::close()?>
+<div class="left">
+	<?=html::anchor('passwords/forgot', 'Reset Password', array('class' => 'buttons'))?>
+</div>
+<div class="clear"></div>
