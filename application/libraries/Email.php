@@ -77,6 +77,24 @@ class Email_Core
 	
 	
 	/**
+	  * Send the reset password e-mail
+	  * @developer Brandon Hansen
+	  * @date May 31, 2010
+	  */
+	public function reset_password(User_Model $user)
+	{
+		$this->subject = 'Reset your To Journal password';
+			
+		$this->body = View::factory('emails/reset_password')
+			->set('user', $user)
+			->render();
+			
+		$this->recipient = $user->email;
+		$this->send();
+	}
+	
+	
+	/**
 	  * Send out the e-mails
 	  * @developer Brandon Hansen
 	  * @date May 25, 2010

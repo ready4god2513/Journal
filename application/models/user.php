@@ -41,6 +41,17 @@ class User_Model extends Auth_User_Model
 	
 	
 	/**
+	  * Find by email address
+	  * @developer Brandon Hansen
+	  * @date May 31, 2010
+	  */
+	public function find_by_email($email)
+	{
+		return $this->where('email', $email)->find();
+	}
+	
+	
+	/**
 	  * Find all of the users that are subscribed to the topic of the day
 	  * @developer Brandon Hansen
 	  * @date May 25, 2010
