@@ -65,7 +65,7 @@ input[type=submit], input[type=button], #navigation a, a.buttons
 	position: relative;
 	margin:5px 5px 10px 0;
 	padding:5px 10px;
-	background: #C03317;
+	background: #3184AD;
 	-moz-border-radius: 7px;
 	-webkit-border-radius: 7px;
 	border-radius: 5px;
@@ -74,17 +74,14 @@ input[type=submit], input[type=button], #navigation a, a.buttons
 	font-family: 'Reenie Beanie', arial, serif;
 }
 
-<<<<<<< HEAD:public/css/forms.css
-a#generateRandomTopic
-=======
-input[type=submit]:hover, input[type=button]:hover, #navigation a, a.buttons:hover
->>>>>>> 0ac47c5587dfdbb3bd07a1db82ed18436fa233f9:public/css/forms.css
+input[type=submit]:hover, input[type=button]:hover
 {
-	background:#3184AD;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	color:#fff;
-	padding:4px;
-	text-decoration:none;
-	font-weight:bold;
+	background:#7A67A5;
+	cursor:pointer;
+}
+
+
+#navigation a:hover, a.buttons:hover
+{
+	background:#198488;
 }
