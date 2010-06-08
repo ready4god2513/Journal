@@ -3,8 +3,7 @@
 
 body
 {
-	background-color: rgb(197,204,211) !important;
-	background-image: url(../images/stripes.png);
+	background-image: url(../images/stripe2.png);
 	margin:20px auto;	
 }
 
@@ -112,7 +111,7 @@ div.journal_meta, div.page_meta
 
 div.journal_meta a, div.page_meta a
 {
-	color:#666;
+	color:#7A67A5;
 	text-decoration:none;
 }
 

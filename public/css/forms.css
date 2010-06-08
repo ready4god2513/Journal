@@ -63,23 +63,28 @@ input[type=submit], input[type=button], #navigation a, a.buttons
 	font-size: 2.2em;
 	text-align: center;
 	position: relative;
-	margin:5px 0 10px 0;
+	margin:5px 5px 10px 0;
 	padding:5px 10px;
-	background: #014464;
-	background: -moz-linear-gradient(top, #0D658E, #0C577A 50%, #014D71 51%, #003E5C);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #0E658E), color-stop(.5, #0C577A), color-stop(.5, #014D71), to(#003E5C)); 
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
+	background: #C03317;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
 	border-radius: 5px;
-	border: 1px solid #368DBE;
-	border-top: 1px solid #c3d6df;
+	border: none;
 	text-shadow: 1px 1px 1px black;
 	font-family: 'Reenie Beanie', arial, serif;
 }
 
+<<<<<<< HEAD:public/css/forms.css
+a#generateRandomTopic
+=======
 input[type=submit]:hover, input[type=button]:hover, #navigation a, a.buttons:hover
+>>>>>>> 0ac47c5587dfdbb3bd07a1db82ed18436fa233f9:public/css/forms.css
 {
-	background: #014464;
- 	background: -moz-linear-gradient(top, #0c5f85, #0b5273 50%, #024869 51%, #003853);
- 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #0c5f85), color-stop(.5, #0b5273), color-stop(.51, #024869), to(#003853));
+	background:#3184AD;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	color:#fff;
+	padding:4px;
+	text-decoration:none;
+	font-weight:bold;
 }
