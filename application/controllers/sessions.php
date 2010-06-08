@@ -18,6 +18,7 @@ class Sessions_Controller extends Application_Controller
 		
 		parent::new_one();
 		meta::set_title('Login');
+		layout::add(View::factory('shared/mentions')->render(), 'pre_footer');
 	}
 
 	

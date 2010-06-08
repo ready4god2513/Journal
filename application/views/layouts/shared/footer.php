@@ -11,6 +11,12 @@
 	</div>
 <?php frache::stop(); endif; ?>
 
+<?php if(layout::output('pre_footer', false)): ?>
+	<div class="container" id="pre_footer">
+		<?=layout::output('pre_footer')?>
+	</div>
+<?php endif; ?>
+
 <?=layout::output('footer')?>
 </body>
 </html>
