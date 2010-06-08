@@ -8,17 +8,42 @@
 
 <url>
   <loc>https://tojournal.com/login</loc>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>https://tojournal.com/register</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://tojournal.com/passwords/forgot</loc>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>https://tojournal.com/page/about</loc>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>https://tojournal.com/page/privacy</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://tojournal.com/page/the%20roadmap</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://tojournal.com/blog</loc>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>https://tojournal.com/contact</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://tojournal.com/blogs/show/1/Reason%20to%20Journal%20</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://tojournal.com/blogs/show/2/Short%20People%20Lose</loc>
+  <changefreq>weekly</changefreq>
 </url>
 </urlset>
