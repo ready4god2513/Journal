@@ -45,7 +45,7 @@ class Email_Core
 		}
 		else
 		{
-			$this->mailer = new Phpmailer();
+			$this->mailer = new PHPMailer();
 		}
 	}
 
