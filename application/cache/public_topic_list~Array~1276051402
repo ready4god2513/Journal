@@ -1,4 +1,4 @@
-s:786:"	<script type="text/javascript">
+s:785:"	<script type="text/javascript">
 		$('#generateRandomTopic').click(function(){
 			
 			var suggestedTopics = [
@@ -16,7 +16,7 @@ s:786:"	<script type="text/javascript">
 							'My Dreams and Desires',
 							'Where do I see myself in 1 year?',
 							'What gives me joy?',
-							'What Makes Life Crazy?!',
+							'What makes life crazy?',
 						'Free Write'
 			];
 			suggestedTopics.sort(function() {return 0.5 - Math.random()});

@@ -18,7 +18,6 @@ class Sessions_Controller extends Application_Controller
 		
 		parent::new_one();
 		meta::set_title('Login');
-		layout::add(View::factory('shared/mentions')->render(), 'pre_footer');
 	}
 
 	
@@ -54,7 +53,7 @@ class Sessions_Controller extends Application_Controller
 	public function delete()
 	{
 		Auth::instance()->logout();
-		url::redirect('login');
+		url::redirect('');
 	}
 	
 	

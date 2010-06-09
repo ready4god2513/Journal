@@ -4,7 +4,7 @@
  *
  * Sets the default route to the products controller
  */
-$config['_default'] = 'journals';
+$config['_default'] = 'home';
 
 /**
   * Since we can't have the method "new", 
