@@ -14,7 +14,7 @@ class Home_Controller extends Template_Controller
 	public function __construct()
 	{
 		parent::__construct();
-		meta::set_title('Welcome');
+		meta::set_title('Remembering Life');
 		layout::add(View::factory('shared/mentions')->render(), 'pre_footer');
 	}
 	
