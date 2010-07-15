@@ -26,7 +26,14 @@ class Home_Controller extends Template_Controller
 	  */
 	public function index()
 	{
-		$this->template->content = View::factory('home/index');
+		if(user::logged_in())
+		{
+			url::redirect('journals');
+		}
+		else
+		{
+			url::redirect('login');
+		}
 	}
 
 }
