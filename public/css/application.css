@@ -3,8 +3,8 @@
 
 body
 {
-	background-image: url(../images/stripe2.png);
-	margin:20px auto;	
+	background: #fff url(../images/bg.jpg) repeat-x;
+	margin:20px auto 0 auto;	
 }
 
 h1#logo, h1.fancy
@@ -64,16 +64,25 @@ div.margining
 
 div.white
 {
+	border-top:3px solid #e8e8e8;
+	border-bottom:3px solid #e8e8e8;
 	background:#fff;
-	-moz-box-shadow: 2px 2px 15px #666;
-	-webkit-box-shadow: 2px 2px 15px #666;
-	box-shadow: 2px 2px 15px #666;
+	-moz-box-shadow: 1px 1px 3px #666;
+	-webkit-box-shadow: 1px 1px 3px #666;
+	box-shadow: 1px 1px 3px #666;
 }
 
 div#navigation
 {
 	margin:10px auto;
 	text-align:right;	
+}
+
+div#full_footer
+{
+	background: #F8F9FD url(../images/bg.jpg) repeat-x;
+	margin-top:80px;
+	min-height:200px;
 }
 
 div#footer_navigation
@@ -86,11 +95,12 @@ div#footer_navigation a
 	color:#666;
 	text-decoration:none;
 	padding:5px;
+	font-weight:bold;
 }
 
 div.journal_entry, div.page_body
 {
-	background:#e8e8e8;
+	background:#f8f8f8;
 	margin-bottom:15px;
 	padding:10px;
 }
@@ -128,8 +138,9 @@ div.journal_meta span.the_time
 
 div.journal_entry_content, div.page_content
 {
-	font-style:italic;
 	margin:5px 10px;
+	font-family:"Times New Roman";
+	font-size:1.2em;
 }
 
 div.user_message
