@@ -7,6 +7,18 @@ class Statics_Controller extends Application_Controller
 	
 	
 	/**
+	  * Initialize the controller
+	  * @Developer brandon
+	  * @Date Jul 15, 2010
+	  */
+	public function __construct()
+	{
+		parent::__construct();
+		layout::add(View::factory('shared/mentions')->render(), 'pre_footer');
+	}
+	
+	
+	/**
 	  * Show
 	  * @Developer brandon
 	  * @Date May 19, 2010

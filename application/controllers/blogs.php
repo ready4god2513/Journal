@@ -22,6 +22,8 @@ class Blogs_Controller extends Application_Controller
 			
 			Cache::instance()->delete_all();
 		}
+		
+		layout::add(View::factory('shared/mentions')->render(), 'pre_footer');
 	}
 	
 	/**

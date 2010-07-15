@@ -14,6 +14,7 @@ class Users_Controller extends Application_Controller
 	public function new_one()
 	{
 		parent::new_one();
+		layout::add(View::factory('shared/mentions')->render(), 'pre_footer');
 		meta::set_title('Create an Account');
 	}
 	

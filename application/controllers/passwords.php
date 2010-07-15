@@ -11,6 +11,8 @@ class Passwords_Controller extends Users_Controller
 	  */
 	public function forgot()
 	{
+		layout::add(View::factory('shared/mentions')->render(), 'pre_footer');
+		
 		$this->template
 			->set('content', View::factory('passwords/forgot'));
 	}
